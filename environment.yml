@@ -4,9 +4,13 @@ channels:
   - defaults
 dependencies:
   - jupyter
+  - python=3.7
   - numpy
   - pip
   - matplotlib
   - pandas
   - ipython
   - jupyterlab
+  - pip:
+    - natsort
+    - sklearn
