@@ -1,0 +1,13 @@
+name: image_python3
+channels:
+ - conda-forge
+dependencies:
+ - ipython
+ - pip
+ - matplotlib
+ - numpy
+ - pandas
+pip:
+ - sklearn
+ - jupyter
+ - python-csv
