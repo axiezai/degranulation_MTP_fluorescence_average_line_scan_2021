@@ -11,7 +11,7 @@ dependencies:
   - pandas
   - ipython
   - jupyterlab
+  - tqdm
   - pip:
     - natsort
     - sklearn
-    - scipy
