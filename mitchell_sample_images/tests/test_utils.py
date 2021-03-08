@@ -1,10 +1,7 @@
-import sys
-sys.path.append('../')
-
 import numpy as np 
 import pandas as pd
 
-from functions.utils import find_middle, realign_data
+from ..functions.utils import find_middle, realign_data
 
 def test_find_middle_odd():
     # test if a given odd length array returns the right index
