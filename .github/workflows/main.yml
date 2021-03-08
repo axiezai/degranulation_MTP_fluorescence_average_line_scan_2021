@@ -26,4 +26,5 @@ jobs:
         python -m pip install pytest numpy pandas
     - name: Test with pytest
       run: |
-        pytest analysis/tests
+        cd analysis
+        pytest tests
