@@ -1,6 +1,24 @@
 # Utility Functions
+import os 
+import glob 
+import natsort
 import numpy as np 
 import pandas as pd 
+
+# Get file list:
+def get_files(pattern):
+    """Extract files in alphanumerical order that match the provided pattern
+
+    Returns: list
+    """
+    if isinstance(pattern, list):
+        pattern = os.path.join(*pattern)
+        
+    files = natsort.natsorted(glob.glob(pattern))
+    if not files:
+        raise FileNotFoundError('Pattern could not detect file(s)')
+        
+    return files
 
 # find middle:
 def find_middle(in_column):
