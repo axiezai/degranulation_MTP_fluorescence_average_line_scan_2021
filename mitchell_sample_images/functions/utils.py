@@ -72,3 +72,19 @@ def realign_data(in_data, align = "max"):
             shifts[column] = pdiff
             
     return d, shifts
+
+# shift
+def shift_data(in_data, shifts):
+    """
+    Shift dataframe columns based on input reference shifts
+    
+    Returns:
+        d - new shifted dataframe
+    """
+    x, y = in_data.shape
+    d = pd.DataFrame(0, index=np.arange(x), columns = np.arange(y))
+    ind_shifts = shifts.astype(int)
+    for column in in_data:
+        d[column] = in_data[column].shift(periods=ind_shifts[column], fill_value=0)
+        
+    return d
