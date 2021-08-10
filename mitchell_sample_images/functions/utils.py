@@ -26,7 +26,7 @@ def find_middle(in_column):
     Find the middle index of input data column/array
     """
     middle = float(len(in_column))/2
-    return int(np.floor(middle))
+    return int(np.ceil(middle))
     # if even, pick the first value, if odd, keep middle
     #if middle % 2 != 0:
         # odd
