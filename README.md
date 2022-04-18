@@ -1,6 +1,10 @@
-# Some averaging thing for Mitchell
+# DNA MTP degranulation signal averaging
 
-To use notebook:
+Jupyter notebook in reference to "Imaging analysis" from [Mechanically active integrins direct cytotoxic secretion at the immune synapse](https://www.biorxiv.org/content/10.1101/2021.10.02.462778v1).
+
+See [average_signals.ipynb](https://github.com/axiezai/degranulation_MTP_fluorescence_average_line_scan_2021/blob/master/average_signals.ipynb) for example analysis.
+
+To run notebook:
  - Install `miniconda` and `git` if you haven't
  - Clone this repo with `git clone`
  - Create conda environment with `conda env create -f environment.yml`
